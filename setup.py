@@ -19,7 +19,7 @@ setup(
     author_email='steveivy@wallrazer.com',
     description='Pusher support for Flask',
     long_description=__doc__,
-    py_modules=['flask.ext.pusher'],
+    py_modules=['flask_pusher'],
     zip_safe=False,
     include_package_data=True,
     platforms='any',

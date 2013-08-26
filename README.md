@@ -52,9 +52,6 @@ def create_app():
 Usage
 -----
 
-Documentation for communicating with the Pusher service with the python client are here:
-
-<http://pusher.com/docs/server_api_guide#/lang=python>
 
 ```python
 from extensions import pusher
@@ -63,3 +60,7 @@ pusher[channel_name].trigger('event', {
 	'message': msg,
 })
 ```
+
+Documentation for communicating with the Pusher service with the python client are on the Pusher website:
+
+<http://pusher.com/docs/server_api_guide#/lang=python>

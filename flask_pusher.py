@@ -27,10 +27,10 @@ class Pusher(object):
         self.app = app
 
         self.pusher = pusher_client.Pusher(
-            app_id=config.PUSHERAPP_ID,
-            key=config.PUSHERAPP_KEY,
-            secret=config.PUSHERAPP_SECRET)
+            app_id=self.config['PUSHERAPP_ID'],
+            key=self.config['PUSHERAPP_KEY'],
+            secret=self.config['PUSHERAPP_SECRET'])
 
         if not hasattr(app, "extensions"):
             app.extensions = {}
-        app.extensions['pusher'] = self
+        app.extensions['pusher'] = self.pusher
